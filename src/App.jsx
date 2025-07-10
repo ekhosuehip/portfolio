@@ -1,8 +1,12 @@
-import React from 'react'
-import Hero from './sections/Hero'
+import React from 'react';
+import Nav from './components/Nav';
+import Hero from './sections/Hero';
+import Projects from './sections/Projects';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Cards from './sections/Resume';
 
 const App = () => {
   useEffect(() => {
@@ -12,8 +16,11 @@ const App = () => {
   });
 }, []);
   return (
-    <main className='w-[1029px] h-dvh'>
+    <main className='bg-black'>
+      <Nav />
       <Hero />
+      <Projects />
+      <Cards />
     </main>
   )
 }

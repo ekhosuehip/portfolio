@@ -270,6 +270,41 @@ const socialImgs = [
   },
 ];
 
+const projects = [
+  {
+    name: 'TeachMate',
+    description: "TeachMate is an AI-powered learning assistant that converts textbook content into summaries, quizzes, flashcards, and Q&A sessions. It supports multiple languages and adapts difficulty levels to help students learn more efficiently.",
+    imgPath: '/images/project1.png',
+    href: 'https://github.com/ekhosuehip/TeachMate'
+  },
+  {
+    name: 'Gbese',
+    description: "Gbese is a TypeScript-based financial application that enables users to securely borrow and send money in a peer-to-peer ecosystem. It includes robust authentication, transaction tracking, and account verification features.",
+    imgPath: '/images/cover.png',
+    href: 'https://gbese.vercel.app/'
+  },
+  {
+    name: 'IoT-Powered Smart Home Surveillance & Location Tracker',
+    description: "A complete IoT-based home security system with motion, sound, and GPS tracking using MQTT, Firebase, and Python GUI. Ideal for smart environments, mobile asset monitoring, or security research projects.",
+    imgPath: '/images/project2.png',
+    href: 'https://github.com/ekhosuehip/security_detector'
+  },
+  {
+    name: 'Flight_Search',
+    description: "This Python program tracks flight prices from London to various cities using data from a Google Spreadsheet. It fetches real-time prices via the Amadeus API and sends SMS alerts through AWS SNS when prices fall within the user’s budget.",
+    imgPath: '/images/project3.png',
+    href: 'https://github.com/ekhosuehip/flight-search'
+  },
+  {
+    name: 'Note',
+    description: "A TypeScript-powered RESTful API for managing personal notes with full JWT-based user authentication. Users can register, log in, and manage notes organized by categories. Built with Express.js, MongoDB, Mongoose, and Joi for validation.",
+    imgPath: '/images/project4.png',
+    href: 'https://github.com/ekhosuehip/Note-api-with-authentication-'
+  },
+  
+  
+]
+
 export {
   words,
   abilities,
@@ -282,4 +317,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects
 };
