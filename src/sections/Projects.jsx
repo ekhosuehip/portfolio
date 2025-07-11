@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <section id="work" className="app-showcase py-10 text-white">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="flex justify-center mb-16">
-          <h1 className="hero-text text-4xl font-bold tracking-tight">Projects</h1>
-        </div>
+      <h1 className="text-5xl font-extrabold tracking-tight text-white xl:p-10 mb-10 text-center">
+          Projects<span className="text-white-50">.</span>
+        </h1>
 
         <div className="block lg:hidden">
           <Mobile />

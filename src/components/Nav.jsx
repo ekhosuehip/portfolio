@@ -19,7 +19,11 @@ const Nav = () => {
     <header className={`navbar ${scrolled ? 'scrolled': 'not-scrolled'}`}>
       <div className="inner">
         <a className="logo" href="#hero">
-            Promise
+            <img
+                src="/images/logos/3.1.svg"
+                alt="logo"
+                className="w-[40px] h-[40px] object-contain grayscale hover:grayscale-0 transition-all duration-300"
+            />
         </a>
 
         <nav className="desktop">

@@ -9,10 +9,11 @@ const Mobile = () => {
         {projects.map((project) => (
           <div
             key={project.name}
-            className="relative h-[500px] w-full border border-white rounded-xl overflow-hidden shadow-lg flex flex-col justify-between"
+            style={{ backgroundImage: `url(${project.imgPath})` }}
+            className="relative h-[500px] w-full card card-bordr timeline-card bg-center bg-cover border border-white rounded-xl overflow-hidden shadow-lg flex flex-col justify-between"
           >
-            <div className="flex-1 flex items-center justify-center bg-black/70 p-6">
-              <p className="text-white text-center text-sm sm:text-base">
+            <div className="flex-1 flex items-center justify-center bg-black/60 p-6">
+              <p className="text-white text-center text-balance">
                 {project.description}
               </p>
             </div>
