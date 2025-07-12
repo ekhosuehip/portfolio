@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../components/Button';
 import { projects } from '../constants';
 
@@ -6,7 +5,7 @@ const Mobile = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 sm:px-8 w-full max-w-6xl">
-        {projects.map((project) => (
+        {projects.details.map((project) => (
           <div
             key={project.name}
             style={{ backgroundImage: `url(${project.imgPath})` }}

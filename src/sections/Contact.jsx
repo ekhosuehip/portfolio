@@ -41,8 +41,8 @@ const Contact = () => {
     <section id="contact" className=" section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Get in Touch - Let's Connect"
+          sub="💬 Have questions or ideas? Let's talk! 🚀"
         />
         <div className="w-full min-h-[70vh] flex justify-center items-center mt-10">
         
@@ -53,14 +53,14 @@ const Contact = () => {
                 className="w-full flex flex-col gap-7"
               >
                 <div>
-                  <label htmlFor="name">Your name</label>
+                  <label htmlFor="name">Your Name</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="What's your good name?"
                     required
                   />
                 </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What’s your email address?"
+                    placeholder="What's your email address?"
                     required
                   />
                 </div>

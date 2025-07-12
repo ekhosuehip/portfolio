@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../components/Button';
 import { projects } from '../constants';
 import Mobile from './ProjectMobile';
@@ -16,7 +15,7 @@ const Projects = () => {
         </div>
 
         <div className="hidden lg:flex flex-wrap overflow-hidden gap-4 px-8">
-          {projects.map((project, index) => (
+          {projects.details.map((project, index) => (
             <div
               key={index}
               style={{ backgroundImage: `url(${project.imgPath})` }}

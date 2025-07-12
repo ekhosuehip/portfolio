@@ -1,4 +1,4 @@
-import { techStacks, aboutMe } from "../constants";
+import { skills, aboutMe } from "../constants";
 import { motion } from 'framer-motion';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/Tabs";
 import { experience, education } from "../constants";
@@ -32,13 +32,13 @@ const Resume = () => {
           <div className="min-h-[70vh] w-full">
             <TabsContent value="education" className="w-full space-y-6">
             <div className="flex flex-col gap-4 text-center xl:text-left">
-                <h3 className="text-4xl font-bold">My Education</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">A combination of formal education and continuous online learning has shaped my technical foundation. I've studied core computer science subjects and supplemented my learning with hands-on bootcamps and algorithm-focused courses.</p>
+                <h3 className="text-4xl font-bold">{education.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
               </div>
 
               <ScrollArea className="h-[60vh] rounded-lg border border-white/10 p-4 bg-white/5 backdrop-blur-md">
                 <div className="space-y-4 ">
-                  {education.map((item) => (
+                  {education.details.map((item) => (
                     <div
                       key={item.key}
                       className="bg-white/10 hover:bg-white/20 card card-bordr timeline-card transition rounded-lg p-4 shadow-sm border border-white/20"
@@ -63,13 +63,13 @@ const Resume = () => {
 
             <TabsContent value="experience" className="w-full space-y-6">
               <div className="flex flex-col gap-4 text-center xl:text-left">
-                <h3 className="text-4xl font-bold">Professional Experience</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">From internship to full-time development, I've worked on real backend systems that power everyday applications. These roles helped me build, optimize, and scale APIs using industry best practices.</p>
+                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
               </div>
 
               <ScrollArea className=" rounded-lg border border-white/10 p-4 bg-white/5 backdrop-blur-md">
                 <div className="space-y-4">
-                  {experience.map((item) => (
+                  {experience.details.map((item) => (
                     <div
                       key={item.key}
                       className="bg-white/10 hover:bg-white/20 card card-bordr timeline-card transition rounded-lg p-4 shadow-sm border border-white/20"
@@ -94,14 +94,14 @@ const Resume = () => {
 
             <TabsContent value="skills" className="w-full space-y-6">
               <div className="flex flex-col gap-4 text-center xl:text-left">
-                <h3 className="text-4xl font-bold">Tech Stacks</h3>
+                <h3 className="text-4xl font-bold">{skills.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  I work confidently across multiple technologies and frameworks as a software engineer — building, testing, and improving modern applications for real-world use cases.
+                  {skills.description}
                 </p>
               </div>
 
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 xl:gap-8">
-                {techStacks.map((skill, index) => (
+                {skills.details.map((skill, index) => (
                   <li key={index} className="w-full card card-bordr timeline-card">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>

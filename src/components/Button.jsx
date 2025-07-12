@@ -1,16 +1,23 @@
-const Button = ({ text, className, id, src, href }) => {
+const Button = ({ text, className, id, src, href, onClick }) => {
   return (
     <a
       onClick={(e) => {
         e.preventDefault();
+
+        if (onClick) {
+          onClick();
+          return;
+        }
+
         const target = document.getElementById(id);
         if (target) {
           target.scrollIntoView({ behavior: 'smooth' });
-        }else if (!id && href) {
-            window.open(href, '_blank')
+        } 
+        else if (!id && href) {
+          window.open(href, '_blank', 'noopener,noreferrer');
         }
       }}
-      className={`${className ?? ""} cta-wrapper rel="noopener noreferrer"`}
+      className={`${className ?? ""} cta-wrapper`}
     >
       <div className="cta-button group">
         <div className="bg-circle" />
